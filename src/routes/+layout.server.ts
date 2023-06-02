@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import { caisySDK } from '../services/graphql/getSdk';
 import type { Load } from '@sveltejs/kit';
 
