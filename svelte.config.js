@@ -5,7 +5,13 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 const config = {
 	runtime: 'edge',
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+            // See below for an explanation of these options
+            routes: {
+                include: ['/*'],
+                exclude: ['<all>']
+            }
+        })
 	},
 	preprocess: vitePreprocess()
 };
