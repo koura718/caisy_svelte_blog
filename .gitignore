@@ -142,3 +142,7 @@ vite.config.ts.timestamp-*
 # replit
 .replit
 replit.nix
+.replit*
+replit.nix*
+.replit.*
+replit.nix.*
